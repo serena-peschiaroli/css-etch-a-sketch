@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.percentage {
+    width: 40%;
+    height: 100px;
+    background-color: red;
+}
+.px-font {
+    font-size: 24px;
+}
+
+.rem-font{
+    font-size: 2rem;
+}
+
+.em-font {
+    font-size: 2em;
+
+}
+.small-text {
+    font-size: 10px;
+}
+
+.secondary-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+
+    /* più grande il fontsize più grande è il margine sotto */
+}
+
+.btn {
+    background-color: gray;
+    color: white;
+    border-radius: 2rem;
+    margin: 20px;
+    padding: 0.5em 1em;
+}
+.btn-large {
+    font-size: 2em;
+}
