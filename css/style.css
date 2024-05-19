@@ -4,65 +4,79 @@
     box-sizing: border-box;
 }
 
-.percentage {
-    width: 40%;
-    height: 100px;
-    background-color: red;
-}
-.px-font {
-    font-size: 24px;
-}
-
-.rem-font{
-    font-size: 2rem;
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
 }
 
-.em-font {
-    font-size: 2em;
-
-}
-.small-text {
-    font-size: 10px;
-}
-
-.secondary-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.5em;
-
-    /* più grande il fontsize più grande è il margine sotto */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    max-height: 1200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: auto;
 }
 
-.btn {
-    background-color: gray;
-    color: white;
-    border-radius: 2rem;
-    margin: 20px;
-    padding: 0.5em 1em;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 960px;
+   
+    overflow: auto;
 }
-.btn-large {
-    font-size: 2em;
+
+.form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 1rem;
 }
-div {
-    color: blue;
+
+.form-wrapper select {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
 }
-.red {
-    color: red;
+
+.startGame {
+    width: 100px;
+    height: 50px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: aqua;
+    font-size: 1rem;
 }
-#my-text {
-    color: green;
-}
+
 .square {
-    width: 150px;
-    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.mb-1 {
-    margin-bottom: 10px;
-    margin-top: 20px;
+
+.square-sm {
+    width: calc(100% / 8);
+    aspect-ratio: 1;
 }
-.mb-2 {
-    margin-bottom: 20px;
+
+.square-md {
+    width: calc(100% / 10);
+    aspect-ratio: 1;
 }
-.mb-3 {
-    margin-bottom: 30px;
-    margin-top: 30px;
+
+.square-l {
+    width: calc(100% / 16);
+    aspect-ratio: 1;
 }
